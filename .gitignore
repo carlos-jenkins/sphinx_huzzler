@@ -1,4 +1,4 @@
 *.pyc
 dist
-guzzle_sphinx_theme.egg-info
+sphinx_huzzler.egg-info
 demo/_build

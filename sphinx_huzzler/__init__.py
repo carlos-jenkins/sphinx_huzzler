@@ -1,4 +1,6 @@
-"""Sphinx Guzzle theme."""
+"""
+Sphinx Huzzler theme.
+"""
 
 import os
 import xml.etree.ElementTree as ET

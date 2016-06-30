@@ -1,6 +1,6 @@
-========================
-Guzzle Sphinx Theme Demo
-========================
+=========================
+Sphinx Huzzler Theme Demo
+=========================
 
 .. toctree::
     :hidden:
@@ -21,7 +21,7 @@ Check this out
 Another list
 ------------
 
-* `lorem ipsum dolor <https://github.com/guzzle/guzzle_sphinx_theme>`_
+* `lorem ipsum dolor <https://github.com/carlos-jenkins/sphinx_huzzler>`_
 * dolor lorem ipsum
 * lorem ipsum dolor
 * dolor lorem ipsum

@@ -1,15 +1,18 @@
-===================
-Guzzle Sphinx Theme
-===================
+====================
+Sphinx Huzzler Theme
+====================
 
-Sphinx theme used by Guzzle: http://guzzlephp.org
+Huzzler is Guzzler with Huntr.
+
+Based on Guzzler theme at https://github.com/guzzle/guzzle_sphinx_theme
+
 
 Installation
 ============
 
 Install via pip::
 
-    $ pip install guzzle_sphinx_theme
+    $ pip install sphinx_huzzler
 
 or if you have the code checked out locally::
 
@@ -22,17 +25,17 @@ Add the following to your conf.py:
 
 .. code-block:: python
 
-    import guzzle_sphinx_theme
+    import sphinx_huzzler
 
     # Adds an HTML table visitor to apply Bootstrap table classes
-    html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
-    html_theme_path = guzzle_sphinx_theme.html_theme_path()
-    html_theme = 'guzzle_sphinx_theme'
+    html_translator_class = 'sphinx_huzzler.HTMLTranslator'
+    html_theme_path = sphinx_huzzler.html_theme_path()
+    html_theme = 'sphinx_huzzler'
 
     # Register the theme as an extension to generate a sitemap.xml
-    extensions.append("guzzle_sphinx_theme")
+    extensions.append("sphinx_huzzler")
 
-    # Guzzle theme options (see theme.conf for more information)
+    # Sphinx Huzzler theme options (see theme.conf for more information)
     html_theme_options = {
         # Set the name of the project to appear in the sidebar
         "project_nav_name": "Project Name",
@@ -43,17 +46,17 @@ example shows:
 
 .. code-block:: python
 
-    import guzzle_sphinx_theme
+    import sphinx_huzzler
 
     # Adds an HTML table visitor to apply Bootstrap table classes
-    html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
-    html_theme_path = guzzle_sphinx_theme.html_theme_path()
-    html_theme = 'guzzle_sphinx_theme'
+    html_translator_class = 'sphinx_huzzler.HTMLTranslator'
+    html_theme_path = sphinx_huzzler.html_theme_path()
+    html_theme = 'sphinx_huzzler'
 
     # Register the theme as an extension to generate a sitemap.xml
-    extensions.append("guzzle_sphinx_theme")
+    extensions.append("sphinx_huzzler")
 
-    # Guzzle theme options (see theme.conf for more information)
+    # Sphinx Huzzler theme options (see theme.conf for more information)
     html_theme_options = {
 
         # Set the path to a special layout to include for the homepage

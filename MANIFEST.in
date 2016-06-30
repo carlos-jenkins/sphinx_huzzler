@@ -1,3 +1,3 @@
 include LICENSE
 include README.rst
-recursive-include guzzle_sphinx_theme/guzzle_sphinx_theme *
+recursive-include sphinx_huzzler/sphinx_huzzler *

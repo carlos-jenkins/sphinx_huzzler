@@ -1,14 +1,14 @@
 from setuptools import setup
 
 setup(
-    name='guzzle_sphinx_theme',
-    version='0.7.11',
-    description='Sphinx theme used by Guzzle.',
+    name='sphinx_huzzler',
+    version='0.1.0',
+    description='Huzzler is Guzzler with Huntr.',
     long_description=open('README.rst').read(),
-    author='Michael Dowling',
-    author_email='mtdowling@gmail.com',
-    url='https://github.com/guzzle/guzzle_sphinx_theme',
-    packages=['guzzle_sphinx_theme'],
+    author='Carlos Jenkins',
+    author_email='carlos@jenkins.co.cr',
+    url='https://github.com/carlos-jenkins/sphinx_huzzler',
+    packages=['sphinx_huzzler'],
     include_package_data=True,
     install_requires=['Sphinx>=1.2b1'],
     classifiers=(
