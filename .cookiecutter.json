@@ -1,0 +1,11 @@
+{
+    "author": "Carlos Jenkins",
+    "email": "carlos@jenkins.co.cr",
+    "repo_name": "sphinx_huzzler",
+    "repo_url": "https://github.com/carlos-jenkins/sphinx_huzzler",
+    "doc_url": "https://sphinx_huzzler.readthedocs.org/",
+    "project_name": "Sphinx Huzzler Theme",
+    "short_description": "Huzzler is Guzzler with Huntr.",
+    "year": "2016",
+    "version": "0.1.0"
+}

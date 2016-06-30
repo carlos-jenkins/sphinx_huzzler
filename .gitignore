@@ -1,4 +1,20 @@
-*.pyc
-dist
-sphinx_huzzler.egg-info
-demo/_build
+*.py[cod]
+__pycache__
+
+# Packages
+*.egg
+*.egg-info
+dist/*
+build/*
+
+# Sphinx
+doc/_build/*
+doc/sphinx_huzzler/*
+
+# Tox
+.tox/*
+.cache/*
+.coverage
+
+# Misc
+*~

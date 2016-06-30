@@ -2,11 +2,18 @@
 Sphinx Huzzler theme.
 """
 
+from __future__ import unicode_literals, absolute_import
+from __future__ import print_function, division
+
 import os
 import xml.etree.ElementTree as ET
 
 from docutils import nodes
 from sphinx.writers.html import HTMLTranslator as SphinxHTMLTranslator
+
+__author__ = 'Carlos Jenkins'
+__email__ = 'carlos@jenkins.co.cr'
+__version__ = '0.1.0'
 
 
 def setup(app):
@@ -146,3 +153,6 @@ class HTMLTranslator(SphinxHTMLTranslator):
     def depart_field_list(self, node):
         self.body.append('</dl>\n')
         self.compact_field_list, self.compact_p = self.context.pop()
+
+
+__all__ = ['setup', 'html_theme_path', 'HTMLTranslator']

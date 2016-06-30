@@ -1,3 +1,4 @@
-include LICENSE
-include README.rst
-recursive-include sphinx_huzzler/sphinx_huzzler *
+include README.rst LICENSE
+include requirements.txt
+exclude test/*
+global-exclude __pycache__ *.py[co]
