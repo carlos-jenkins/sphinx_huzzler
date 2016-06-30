@@ -1,14 +1,42 @@
-/* Sphinx themes
--------------------------------------------------- */
+@font-face {
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('FiraSans Light'), local('FiraSans-Light'), url(./fonts/FiraSans-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('FiraSans'), local('FiraSans-Regular'), url(./fonts/FiraSans-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('FiraSans SemiBold'), local('FiraSans-SemiBold'), url(./fonts/FiraSans-SemiBold.woff) format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('FiraSans Bold'), local('FiraSans-Bold'), url(./fonts/FiraSans-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'FiraMono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('FiraMono'), local('FiraMono-Regular'), url(./fonts/FiraMono-Regular.woff) format('woff');
+}
 
 body {
-  background-color: #edf0f2;
+  background-color: #ffffff;
+  color: #3a4145;
+  font-family: FiraSans,'Open Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.5;
 }
 
 #left-column {
@@ -22,10 +50,11 @@ body {
 }
 
 #right-column {
-  padding: 20px 0;
-  margin-left: 300px;
   background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  margin-left: 300px;
   max-width: 900px;
+  padding: 20px 0;
 }
 
 a.headerlink {
@@ -50,10 +79,12 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: black;
+  color: #3a4145;
+  font-family: FiraSans,'Open Sans',sans-serif;
   font-weight: normal;
+  line-height: 1em;
   padding: 0;
-  font-family: "Source Serif Pro", "serif";
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3 {
@@ -104,11 +135,21 @@ div.related {
   display: none;
 }
 
+a, a:hover, a:focus {
+  text-decoration: none;
+  color: #57a3e8;
+}
+
 p {
-  padding: 0;
+  color: #3a4145;
   font-family: inherit;
-  font-size: inherit;
-  color: #333;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  padding: 0;
+}
+
+li {
+    line-height: 1.9em;
 }
 
 code, pre, tt {
@@ -152,11 +193,53 @@ a.internal em {
 }
 
 dl dd {
+  line-height: 1.8em;
   margin: 3px 0 10px 30px;
 }
 
 dl.method {
   border-bottom: 1px solid #ccc;
+}
+
+dl.class,
+dl.function,
+dl.exception,
+dl.data {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+}
+
+dl.class em,
+dl.function em,
+dl.exception em,
+dl.data em {
+  font-style: normal;
+}
+
+/* Extend reference heads to the width */
+dl.class dt,
+dl.function dt,
+dl.exception dt,
+dl.data dt {
+  width: 100% !important;
+}
+
+/* Improve box spacing */
+dl.class dd,
+dl.function dd,
+dl.exception dd,
+dl.data dd {
+  margin: 0 !important;
+  padding: 15px !important;
+}
+
+/* Remove namespace in reference, we know where we are thank you */
+dl.class dt code.descclassname,
+dl.function dt code.descclassname,
+dl.exception dt code.descclassname,
+dl.data dt code.descclassname {
+  display: none !important;
 }
 
 .breadcrumb {
@@ -174,6 +257,26 @@ blockquote {
   margin: 20px 0;
   padding: 15px 20px;
   font-size: 16px;
+}
+
+/* Make mages responsive */
+.container-wrapper img {
+  max-width: 100%;
+}
+
+.container.float-right {
+  float: right;
+  width: initial;
+}
+
+.section h1 code {
+  font-size: 1em;
+}
+
+/* PlantUML SVGs */
+object[type="image/svg+xml"] {
+  height: auto !important;
+  max-width: 100%;
 }
 
 /* Sphinx sidebar
@@ -400,11 +503,12 @@ table.two-column {
 -------------------------------------------------- */
 
 div.footer {
-  padding: 25px;
-  font-size: 14px;
+  border-right: 1px solid #e0e0e0;
   color: #888;
-  text-align: right;
+  font-size: 14px;
   max-width: 1200px;
+  padding: 25px;
+  text-align: right;
   width: 100%;
 }
 
